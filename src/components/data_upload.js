@@ -1,10 +1,9 @@
 import React, { useState, } from 'react';
 // import { useDropzone} from 'react-dropzone';
 import axios from 'axios';
-import './App.css';
 
-function App() {
-  const granteeList = ['Heveltas','IDH','PDF','Rikolto','SolidaridadPACE','SolidaridadCERT','Trias','Viagro'];
+export default function DataUploadPage(){
+    const granteeList = ['Heveltas','IDH','PDF','Rikolto','SolidaridadPACE','SolidaridadCERT','Trias','Viagro'];
   const [file, setFile] = useState(null);
   const [grantee,setGrantee]=useState(null);
   
@@ -89,5 +88,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
