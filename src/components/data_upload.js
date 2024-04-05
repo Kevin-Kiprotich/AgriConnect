@@ -3,7 +3,7 @@ import React, { useState, } from 'react';
 import axios from 'axios';
 
 export default function DataUploadPage(){
-    const granteeList = ['Heveltas','IDH','PDF','Rikolto','SolidaridadPACE','SolidaridadCERT','Trias','Viagro'];
+  const granteeList = ['Helvetas','IDH','PDF','Rikolto','SolidaridadPACE','SolidaridadCERT','Trias','Viagro'];
   const [file, setFile] = useState(null);
   const [grantee,setGrantee]=useState(null);
   
