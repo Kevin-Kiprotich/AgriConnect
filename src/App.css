@@ -12,7 +12,7 @@
 
 .form {
   /* border:1px solid #494949; */
-  height: 500px;
+  height: fit-content;
   width: 500px;
   background-color: white;
   border-radius: 20px;
@@ -32,6 +32,12 @@
 
 .formholder p{
   font-size:14px;
+}
+
+.formholder h4{
+  font-size: 16px;
+  font-weight:700;
+  margin-bottom: 12px !important;
 }
 
 form {
@@ -75,7 +81,7 @@ input{
 }
 
 .buttonholder button{
-  background-color:rgb(0,128,79);
+  background-color:#8bcc00;
   color:white;
   width:150px;
   height:40px;

@@ -45,6 +45,9 @@ export default function Infrastructe() {
         }
     }
 
+    // const evaluateMarker = (class) => {
+
+    // }
 
     function plotMap() {
         if (choro.current != null) {
@@ -57,7 +60,9 @@ export default function Infrastructe() {
                 pointToLayer: function (feature, latlng) {
                     return L.marker(latlng, {
                         icon: markers.greenIcon
-                    })
+                    }).bindPopup(`<b>Grantee</b>:${feature.properties.Grantee}<br/>
+                                <b>Infrastructure</b>:${feature.properties.Class}<br/>                                
+                        `)
                 }
             },
             )
