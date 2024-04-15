@@ -54,10 +54,15 @@
     font-weight:bold;
     font-size:14px;
     color: #424242;
+    padding:0 16px;
+}
+
+.routes button:hover{
+    background-color:rgb(230,230,230);
 }
 
 .routes button#active{
-    border-bottom: 1.5px solid #8BCC00;
+    border-bottom: 2px solid #8BCC00;
     color:#8BCC00;
 }
 
