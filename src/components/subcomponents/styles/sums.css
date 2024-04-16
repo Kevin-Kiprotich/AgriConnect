@@ -1,0 +1,13 @@
+.selectors{
+    height:100vh;
+    padding: 48px 16px 0 16px;
+    display:flex;
+    flex-direction:column;
+    align-content:center;
+    align-items:center;
+}
+
+.selectors p{
+    text-align:left;
+    width:100%;
+}
