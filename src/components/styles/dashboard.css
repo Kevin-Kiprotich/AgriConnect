@@ -22,6 +22,7 @@
     align-content:center;
     align-items:center;
     padding:0 16px;
+    box-sizing: border-box;
 }
 
 .logos{
@@ -56,6 +57,7 @@
     font-size:14px;
     color: #424242;
     padding:0 16px;
+    box-sizing:border-box;
 }
 
 .routes button:hover{
@@ -92,6 +94,7 @@ section .sidenav{
     justify-content: center;
     row-gap: 16px;
     padding-top:64px;
+    box-sizing: border-box;
 }
 
 .sidenav button{
@@ -108,6 +111,7 @@ section .sidenav{
     padding:8px 16px;
     border-radius: 10px;
     color:#424242;
+    box-sizing: border-box;
 }
 .sidenav button:hover{
     background-color: rgb(230,230,230);

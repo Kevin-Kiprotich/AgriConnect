@@ -1,20 +1,26 @@
+p{
+    font-size:16px;
+}
 .selectors{
-    height:100vh;
     padding: 48px 24px 0 24px;
     display:flex;
     flex-direction:column;
     align-content:center;
     align-items:center;
+    gap:16px;
+    box-sizing: border-box;
 }
 
 .title{
     font-size:14px;
     font-weight:600;
     letter-spacing:  .00714em;
+    margin:0 !important;
 }
 .selectors p{
     text-align:left;
     width:100%;
+    margin:0 !important;
 }
 
 .dropdown{
@@ -46,6 +52,7 @@
 .dropdown-menu{
     width:100%;
     padding:0;
+    box-sizing: border-box;
 }
 
 .dropdown-value{
@@ -67,4 +74,32 @@ button.dropdown-item{
     border:none;
     height: 40px;
     font-size: 14px;
+}
+
+.fw-bold{
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    font-size: 14px;
+}
+
+.target-selectors{
+    gap:16px;
+    width:100%;
+    font-size: 14px;
+}
+
+.target-selectors .btns{
+    width:100%;
+    height:56px;
+    margin:0 !important;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    padding:0 8px;
+}
+.target-selectors .css-ahj2mt-MuiTypography-root{
+    font-size: 14px;
+}
+.target-selectors .btns:hover{
+    background-color:rgb(240,240,240);
 }
