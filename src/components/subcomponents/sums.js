@@ -22,7 +22,7 @@ import rikolto_logo from '../../assets/images/rikolto.jpg';
 import './styles/sums.css'
 
 export default function Sums() {
-    
+    const sumsOptions=['Cummulative Total','Annual Totals','Quarterly']
     const granteeMap={
         'Helvetas':helvetas_logo,
         'IDH':idh_logo,
@@ -38,6 +38,7 @@ export default function Sums() {
 
     const [grantee,setGrantee]=useState(Object.keys(granteeMap)[0]);
     const [target,setTarget]=useState(targets[1])
+    const [sumsOption,setSumsOption]=useState(sumsOptions[0]);
     return (
         <>
             <div className='selectors'>
@@ -57,10 +58,11 @@ export default function Sums() {
                 </div>
                 <p className='fw-bold'>Targets and Responses</p>
 
-                 <FormControl className='target-selectors'>
+                <FormControl className='target-selectors'>
                         <RadioGroup 
                             name='targets' 
-                            defaultValue='Res'
+                            defaultValue={target}
+                            value={target}
                             className='radio'
                         >
                                 <FormControlLabel
@@ -97,7 +99,21 @@ export default function Sums() {
                                 />
                         </RadioGroup>
                         
-                </FormControl>   
+                </FormControl>
+                <hr/>
+                <p className='fw-bold'>Periodic Summaries</p>
+                <div className="dropdown ">
+                    <button type="button" className="btn dropdown-toggle subdropdown" data-bs-toggle="dropdown">
+                        <div className='dropdown-value'>
+                            <p>{sumsOption}</p>
+                        </div>
+                    </button>
+                    <ul className="dropdown-menu">
+                        {sumsOptions && sumsOptions.map((item,index)=>(
+                            <li key={index}><button className='dropdown-item' onClick={()=>{setSumsOption(item)}} style={{color:sumsOption===item ? '#8BCC00' : ''}}>{item}</button></li>
+                        ))}
+                    </ul>
+                </div>
             </div>
             <div className='dashboard'>
 
