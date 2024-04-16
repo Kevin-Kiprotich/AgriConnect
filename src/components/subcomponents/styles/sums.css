@@ -76,6 +76,10 @@ button.dropdown-item{
     font-size: 14px;
 }
 
+.dropdown-item.active-dropdown:hover{
+    background-color: rgba(139, 204, 0,0.1);
+}
+
 .fw-bold{
     font-weight: 600;
     letter-spacing: 0.3px;

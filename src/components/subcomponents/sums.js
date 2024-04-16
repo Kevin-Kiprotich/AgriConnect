@@ -52,7 +52,9 @@ export default function Sums() {
                     </button>
                     <ul className="dropdown-menu">
                         {granteeMap && Object.keys(granteeMap).map((key)=>(
-                            <li key={key}><button className='dropdown-item' onClick={()=>{setGrantee(key)}} style={{color:grantee===key ? '#8BCC00' : ''}}>{key}</button></li>
+                            <li key={key}>
+                                <button className={`dropdown-item ${grantee===key ? 'active-dropdown' :''}`} onClick={()=>{setGrantee(key)}} style={{color:grantee===key ? '#8BCC00' : ''}}>{key}</button>
+                            </li>
                         ))} 
                     </ul>
                 </div>
@@ -110,7 +112,7 @@ export default function Sums() {
                     </button>
                     <ul className="dropdown-menu">
                         {sumsOptions && sumsOptions.map((item,index)=>(
-                            <li key={index}><button className='dropdown-item' onClick={()=>{setSumsOption(item)}} style={{color:sumsOption===item ? '#8BCC00' : ''}}>{item}</button></li>
+                            <li key={index}><button className={`dropdown-item ${sumsOption===item ? 'active-dropdown' :''}`} onClick={()=>{setSumsOption(item)}} style={{color:sumsOption===item ? '#8BCC00' : ''}}>{item}</button></li>
                         ))}
                     </ul>
                 </div>
