@@ -109,8 +109,14 @@ section .sidenav{
     border-radius: 10px;
     color:#424242;
 }
-
+.sidenav button:hover{
+    background-color: rgb(230,230,230);
+}
 button.active{
+    color:white;
+    background-color: #8BCC00;
+}
+button.active:hover{
     color:white;
     background-color: #8BCC00;
 }
